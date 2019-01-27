@@ -5,6 +5,7 @@
 \usepackage[croatian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{biblatex}
 
 
 
@@ -12,16 +13,22 @@
 \subtitle{Seminar}
 \date{\today}
 \author{Paolo Licul Nino Dumičić}
+\bibliography{Literatura}
+\bibliographystyle{abbrv}
 
 \begin{document}
 
 \maketitle
 
 \begin{frame}{Sadržaj}
-  \setbeamertemplate{section in toc}[sections numbered]
-  \tableofcontents[hideallsubsections]
+  \begin{itemize}
+  \item Uvod
+  \item Winmerge
+  \item Beyond compare
+  \item TortoiseSVN
+  \item Kdiff3
+  \end{itemize}
 \end{frame}
-
 
 \begin{frame}{Uvod}
 	\begin{itemize}
@@ -47,6 +54,7 @@
     \item Iznimna integracija s windowsom
     \item "Three way file comparison"
     \item Ukazuje na pogreške unutar linija
+    \item \cite{winmerg}
 \end{itemize}
     
 \end{frame}
@@ -85,6 +93,7 @@
     \item Jednostavno i user-friendly sučelje
     \item Graf commitova
     \item Odlično integriran s Windowsom
+    \item \cite{tort}
 \end{itemize}
 \end{frame}
 
@@ -111,6 +120,7 @@
         \item Integrirani editor za lako riješavanje conflicta
         \item Vlastit log za povijest spajanja
         \item Sučelje slično kao i kod ostalih, no vrlo surovo
+        \item \cite{kdiff3}
     \end{itemize}
 \end{frame}
 \begin{frame}{Spajanje u KDiff3}
@@ -127,8 +137,8 @@
 
 \begin{frame}[allowframebreaks]{Literatura}
 
-  \bibliography{literatura}
-  \bibliographystyle{abbrv}
+
+  \printbibliography
 
 \end{frame}
 
