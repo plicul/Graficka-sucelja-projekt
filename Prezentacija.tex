@@ -3,15 +3,10 @@
 \usetheme{metropolis}
 \usepackage{appendixnumberbeamer}
 \usepackage[croatian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
 
-\usepackage{booktabs}
-\usepackage[scale=2]{ccicons}
 
-\usepackage{pgfplots}
-\usepgfplotslibrary{dateplot}
-
-\usepackage{xspace}
-\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 
 \title{Grafička sučelja za pregled razlika i pomoć pri spajanju}
 \subtitle{Seminar}
@@ -40,10 +35,18 @@
 		\end{itemize}
 	\end{itemize} 
 	
-	TU DODAT SLIKU NEKU
+\includegraphics[width=10cm]{gui.png}
 \end{frame}
 
-
+\begin{frame}{Meld}
+	\begin{itemize}
+		\item Jedan od najpoznatijih i najkoristenijih GUI diff alata
+		\item Podrzava vise sustava za kontrolu verzija(npr Git, Mercurial, Bazaar)
+		\item Moze usporedivati do 3 razlicita file-a ili direktorija
+		\item Podrzava dinamicno uredivanje fileova
+		\includegraphics{meld1.png}
+		\includegraphics{meld2.png}
+\end{frame}
 
 
 \end{document}
